@@ -4,7 +4,7 @@ import {
 import Rocket from './Components/RocketPage';
 import Mission from './Components/MissionPage';
 import MyProfile from './Components/MyProfile';
-import './App.css'
+import './App.css';
 
 function App() {
   return (
