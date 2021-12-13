@@ -14,7 +14,7 @@ function App() {
           <nav>
             <ul>
               <li>
-                <NavLink exact to="/">Rocket</NavLink>
+                <NavLink to="/">Rocket</NavLink>
               </li>
               <li>
                 <NavLink to="/Mission">Mission</NavLink>
