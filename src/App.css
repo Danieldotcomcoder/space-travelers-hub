@@ -1,3 +1,82 @@
 * {
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+
+  nav {
+      display: flex;
+      flex-direction: row;
+      
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+       
+  }
+
+  h1 {
+      margin-left: 10px;
+      margin-top: 20px;
+  }
+
+  .logo-img {
+    width: 50px;
+    margin-left: 26px;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+      display: flex;
+      flex-direction: row;
+      margin-left: 950px;
+      margin-top: 22px;
+   }
+
+    .nav-link a {
+        text-decoration: none;
+        margin: 22px;
+        padding: 10px;
+        font-size: 18px;
+        color: #5f81f1;
+        cursor: pointer;
+    }
+
+  .rocket-c {
+      display: flex;
+      flex-direction: column;
+      margin: 22px;
+  }
+
+  .rocket-list {
+    display: flex;
+    flex-direction: row;
+    margin: 12px;
 }
+
+  .rocket-img {
+      width: 160px;
+      margin-right:20px
+  }
+
+  .rocket-info {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .reserve-btn {
+    max-width: 120px;
+    background-color: #5f81f1;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    padding: 4px 2px;
+    cursor: pointer;
+  }

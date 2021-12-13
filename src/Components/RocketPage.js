@@ -12,19 +12,19 @@ export default function Rocket() {
   }, []);
 
   return (
-    <div>
+    <div className="rocket-c">
       {rocketNum.map((rocket) => (
-        <ul key={rocket.id}>
+        <ul key={rocket.id} className="rocket-list">
           <li>
-            <img alt="rocket" src={rocket.flickr_images} />
+            <img className="rocket-img" src={rocket.flickr_images} alt="rocket" />
           </li>
-          <div>
-            <li>{rocket.name}</li>
-            <p>
+          <div className="rocket-info">
+            <li><h3>{rocket.name}</h3></li>
+            <p className="rocket-des">
               {rocket.reserved && (<span>Reserved</span>)}
               {rocket.description}
             </p>
-            <button type="button">Reserve</button>
+            <button className="reserve-btn" type="button">Reserve Rocket</button>
           </div>
         </ul>
       ))}
