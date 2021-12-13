@@ -1,9 +1,10 @@
 import {
-  BrowserRouter as Router, Route, Routes, Link,
+  BrowserRouter as Router, Route, Routes, NavLink,
 } from 'react-router-dom';
 import Rocket from './Components/RocketPage';
 import Mission from './Components/MissionPage';
 import MyProfile from './Components/MyProfile';
+import './App.css'
 
 function App() {
   return (
@@ -13,13 +14,13 @@ function App() {
           <nav>
             <ul>
               <li>
-                <Link to="/">Rocket</Link>
+                <NavLink exact to="/">Rocket</NavLink>
               </li>
               <li>
-                <Link to="/Mission">Mission</Link>
+                <NavLink to="/Mission">Mission</NavLink>
               </li>
               <li>
-                <Link to="/MyProfile"> My Profile</Link>
+                <NavLink to="/MyProfile"> My Profile</NavLink>
               </li>
             </ul>
           </nav>
