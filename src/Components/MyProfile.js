@@ -1,13 +1,15 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import JoinedMissions from './JoinedMissions';
 
 export default function MyProfile() {
   const rocketsName = useSelector((state) => state.rockets);
   const reservedRockets = rocketsName.filter((rocket) => rocket.reserved);
   return (
-    <div className="profile-c">
+    <div>
       <div className="my-mission">
-        <h2>My Missions</h2>
+        <h1>My Missions</h1>
+        <JoinedMissions />
       </div>
       <div className="my-rockets">
         <h2>My Rockets</h2>
