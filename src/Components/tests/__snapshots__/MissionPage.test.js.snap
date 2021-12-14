@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Mission Page 1`] = `
+Array [
+  <table>
+    <thead>
+      <tr>
+        <td
+          className="mission-d"
+        >
+          Mission
+        </td>
+        <td
+          className="mission-d"
+        >
+          Description
+        </td>
+        <td
+          className="mission-d"
+        >
+          Status
+        </td>
+        <td>
+          Join
+        </td>
+      </tr>
+    </thead>
+    <tbody />
+  </table>,
+  ",",
+]
+`;
