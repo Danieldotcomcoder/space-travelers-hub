@@ -1,5 +1,5 @@
 :root {
-  --main-color:  #00A3B8;
+  --main-color: #00a3b8;
   --text-color: #fff;
 }
 
@@ -100,7 +100,7 @@ h1 {
 
 .cancel-btn {
   max-width: 120px;
-  background-color:  #e0e0e0;
+  background-color: #e0e0e0;
   border: 1px solid #cfcfcf;
   border-radius: 3px;
   color: #918e8e;
