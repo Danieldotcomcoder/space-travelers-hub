@@ -99,19 +99,21 @@ table {
   width: 100%;
 }
 
-table, td, th{
-  border:1px ridge black;
+table,
+td,
+th {
+  border: 1px ridge black;
   border-collapse: collapse;
   text-align: center;
-  }
+}
 
-  .mission-d {
-    text-align: left;
-    font-size: 3vh;
-    font-weight: 800;
-  }
+.mission-d {
+  text-align: left;
+  font-size: 3vh;
+  font-weight: 800;
+}
 
-  .mission-description {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2vh;
-  }
+.mission-description {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vh;
+}
