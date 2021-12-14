@@ -28,7 +28,7 @@ const getMissions = () => (dispatch) => {
       dispatch(addMissions(missions));
     });
 };
-//
+
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case JOIN_MISSION: return state.map((mission) => {
