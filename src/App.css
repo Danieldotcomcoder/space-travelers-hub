@@ -1,3 +1,8 @@
+:root {
+  --main-color: #00a3b8;
+  --text-color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +43,7 @@ h1 {
   margin: 22px;
   padding: 10px;
   font-size: 18px;
-  color: #5f81f1;
+  color: var(--main-color);
   cursor: pointer;
 }
 
@@ -64,12 +69,17 @@ h1 {
   flex-direction: column;
 }
 
+.rocket-des {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
 .reserve-btn {
   max-width: 120px;
-  background-color: #5f81f1;
+  background-color: var(--main-color);
   border: none;
   border-radius: 3px;
-  color: white;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -116,4 +126,50 @@ th {
 .mission-description {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2vh;
+}
+
+.reserved-r {
+  color: #fff;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  margin: 0 8px 0 0;
+  padding: 3px 8px;
+  font-size: 12px;
+}
+
+.cancel-btn {
+  max-width: 120px;
+  background-color: #e0e0e0;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  color: #918e8e;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  padding: 4px 2px;
+  cursor: pointer;
+}
+
+.my-rockets {
+  margin: 10px;
+}
+
+h2 {
+  margin: 10px;
+}
+
+.rocket-profile {
+  display: flex;
+  flex-direction: column;
+  max-width: 40vw;
+  border: 1px solid #918e8e;
+}
+
+.rocket-name {
+  margin: 0;
+  padding: 12px;
+  font-size: 20px;
+  border-bottom: 1px solid #918e8e;
 }
