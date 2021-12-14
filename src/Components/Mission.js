@@ -6,7 +6,6 @@ import { JoinMission } from '../Redux/missions/Mission';
 const Missions = (props) => {
   const { missionInfo } = props;
   const dispatch = useDispatch();
-
   const Join = () => {
     dispatch(JoinMission(missionInfo.id));
   };
@@ -15,6 +14,13 @@ const Missions = (props) => {
     <tr>
       <td><h3>{missionInfo.name}</h3></td>
       <td><p>{missionInfo.description}</p></td>
+      <td>
+        {
+          (missionInfo.joined)
+            ? <h5>Active Member</h5>
+            : <h5>Not A Member</h5>
+        }
+      </td>
       <td>
         {
           (missionInfo.joined)
