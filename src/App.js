@@ -4,6 +4,7 @@ import {
 import Rocket from './Components/RocketPage';
 import Mission from './Components/MissionPage';
 import MyProfile from './Components/MyProfile';
+import logo from './images/logo.png';
 import './App.css';
 
 function App() {
@@ -12,7 +13,11 @@ function App() {
       <Router>
         <div>
           <nav>
-            <ul>
+            <div className="logo">
+              <img className="logo-img" src={logo} alt="logo" />
+              <h1>Space Travelers&apos; Hub</h1>
+            </div>
+            <ul className="nav-link">
               <li>
                 <NavLink exact to="/">Rocket</NavLink>
               </li>
