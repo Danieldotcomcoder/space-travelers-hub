@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { JoinMission } from '../Redux/missions/Mission';
 
-const Missions = (props) => {
+const Mission = (props) => {
   const { missionInfo } = props;
   const dispatch = useDispatch();
 
@@ -13,8 +13,15 @@ const Missions = (props) => {
 
   return (
     <tr>
-      <td><h3>{missionInfo.name}</h3></td>
-      <td><p>{missionInfo.description}</p></td>
+      <td className="mission-d"><h3>{missionInfo.name}</h3></td>
+      <td className="mission-description"><p>{missionInfo.description}</p></td>
+      <td>
+        {
+          (missionInfo.joined)
+            ? <h5 className="Active-member">Active Member</h5>
+            : <h5 className="Not-A-member">NOT A MEMBER</h5>
+        }
+      </td>
       <td>
         {
           (missionInfo.joined)
@@ -26,7 +33,7 @@ const Missions = (props) => {
   );
 };
 
-Missions.propTypes = {
+Mission.propTypes = {
   missionInfo: PropTypes.shape({
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -35,4 +42,4 @@ Missions.propTypes = {
   }).isRequired,
 };
 
-export default Missions;
+export default Mission;
