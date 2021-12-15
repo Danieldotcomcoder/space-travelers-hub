@@ -143,12 +143,6 @@ th {
   padding: 5px 5px;
 }
 
-.mission-d {
-  text-align: left;
-  font-size: 3vh;
-  font-weight: 800;
-}
-
 .mission-description {
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   font-size: 2vh;
@@ -224,22 +218,26 @@ h2 {
 
 .mission-d {
   width: 100px;
+  text-align: left;
+  font-size: 3vh;
+  font-weight: 800;
 }
 
 .mission-name {
   text-align: left;
 }
 
-.mission-name h3{
+.mission-name h3 {
   font-size: 18px;
   padding: 1px 1px;
 }
 
 tr:nth-child(2n) {
-  background-color: rgb(223, 224, 226) ;
+  background-color: rgb(223, 224, 226);
 }
 
-.mission-D,.mission-S {
+.mission-D,
+.mission-S {
   font-size: 18px;
   font-weight: 800;
 }
