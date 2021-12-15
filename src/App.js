@@ -3,6 +3,7 @@ import {
 } from 'react-router-dom';
 import Rocket from './Components/RocketPage';
 import Mission from './Components/MissionPage';
+import Dragons from './Components/Dragons';
 import MyProfile from './Components/MyProfile';
 import logo from './images/logo.png';
 import './App.css';
@@ -25,6 +26,9 @@ function App() {
                 <NavLink to="/Mission">Mission</NavLink>
               </li>
               <li>
+                <NavLink to="/Dragons">Dragons</NavLink>
+              </li>
+              <li>
                 <NavLink to="/MyProfile"> My Profile</NavLink>
               </li>
             </ul>
@@ -32,6 +36,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Rocket />} />
             <Route path="/Mission" element={<Mission />} />
+            <Route path="/Dragons" element={<Dragons />} />
             <Route path="/MyProfile" element={<MyProfile />} />
           </Routes>
         </div>
