@@ -26,10 +26,10 @@ function App() {
                 <NavLink to="/Mission">Mission</NavLink>
               </li>
               <li>
-                <NavLink to="/Dragons">Dragons</NavLink>
+                <NavLink to="/Dragons" id="dragons">Dragons</NavLink>
               </li>
               <li>
-                <NavLink to="/MyProfile"> My Profile</NavLink>
+                <NavLink to="/MyProfile" id="my-profile"> My Profile</NavLink>
               </li>
             </ul>
           </nav>

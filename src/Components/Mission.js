@@ -13,9 +13,9 @@ const Mission = (props) => {
 
   return (
     <tr>
-      <td className="mission-d"><h3>{missionInfo.name}</h3></td>
+      <td className="mission-name"><h3>{missionInfo.name}</h3></td>
       <td className="mission-description"><p>{missionInfo.description}</p></td>
-      <td>
+      <td className="mission-status">
         {
           (missionInfo.joined)
             ? <h5 className="Active-member">Active Member</h5>
@@ -25,8 +25,8 @@ const Mission = (props) => {
       <td>
         {
           (missionInfo.joined)
-            ? <button type="button" onClick={Join}> Leave Mission </button>
-            : <button type="button" onClick={Join}> Join Mission </button>
+            ? <button type="button" className="leave-mission-btn" onClick={Join}> Leave Mission </button>
+            : <button type="button" className="join-mission-btn" onClick={Join}> Join Mission </button>
         }
       </td>
     </tr>

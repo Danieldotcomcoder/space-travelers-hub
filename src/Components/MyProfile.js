@@ -8,16 +8,16 @@ export default function MyProfile() {
   const dragons = useSelector((state) => state.dragons);
   const reservedDragons = dragons.filter((dragon) => dragon.reserved);
   return (
-    <div>
+    <div className="profile-c">
       <div className="my-mission">
-        <h1>My Missions</h1>
+        <h2>My Missions</h2>
         <JoinedMissions />
       </div>
       <div className="my-rockets">
         <h2>My Rockets</h2>
         <ul className="rocket-profile">
           {reservedRockets.map((rocket) => (
-            <li className="rocket-name" key={rocket.id}>{rocket.name}</li>
+            <li className="rocket-name" key={rocket.id}><h3>{rocket.name}</h3></li>
           ))}
         </ul>
       </div>
@@ -25,7 +25,7 @@ export default function MyProfile() {
         <h2>My Dragons</h2>
         <ul className="dragons-profile">
           {reservedDragons.map((dragon) => (
-            <li className="dragon-name" key={dragon.id}>{dragon.name}</li>
+            <li className="dragon-name" key={dragon.id}><h3>{dragon.name}</h3></li>
           ))}
         </ul>
       </div>
