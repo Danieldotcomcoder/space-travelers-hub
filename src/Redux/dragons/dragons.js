@@ -48,4 +48,4 @@ export const cancelDragons = (payload) => ({
   payload,
 });
 
-export default rocketReducer;
+export default dragonsReducer;
