@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App test Render App 1`] = `
+<div
+  className="App"
+>
+  <div>
+    <nav>
+      <div
+        className="logo"
+      >
+        <img
+          alt="logo"
+          className="logo-img"
+          src="logo.png"
+        />
+        <h1>
+          Space Travelers' Hub
+        </h1>
+      </div>
+      <ul
+        className="nav-link"
+      >
+        <li>
+          <a
+            aria-current="page"
+            className="active"
+            href="/"
+            onClick={[Function]}
+          >
+            Rocket
+          </a>
+        </li>
+        <li>
+          <a
+            className=""
+            href="/Mission"
+            onClick={[Function]}
+          >
+            Mission
+          </a>
+        </li>
+        <li>
+          <a
+            className=""
+            href="/MyProfile"
+            onClick={[Function]}
+          >
+             My Profile
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      className="rocket-c"
+    />
+  </div>
+</div>
+`;
