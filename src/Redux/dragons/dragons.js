@@ -1,8 +1,8 @@
 import dragonsAPI from "../../Components/GetDragons";
 
-const GET_DRAGONS = "spaceX/rockets/GET_DRAGONS";
-const RESERVE_DRAGONS = "spaceX/rockets/RESERVE_DRAGONS";
-const CANCEL_DRAGONS_RESERVE = "spaceX/rockets/CANCEL_DRAGONS";
+const GET_DRAGONS = "spaceX/dragons/GET_DRAGONS";
+const RESERVE_DRAGONS = "spaceX/dragons/RESERVE_DRAGONS";
+const CANCEL_DRAGONS_RESERVE = "spaceX/dragons/CANCEL_DRAGONS";
 const initialState = [];
 
 const dragonsReducer = (state = initialState, action) => {
@@ -22,8 +22,15 @@ const dragonsReducer = (state = initialState, action) => {
 
       return updateState;
     }
+    default:
+      return state;
   }
 };
+
+const getDragonAction = (payload) => ({
+  type: GET_DRAGONS,
+  payload,
+});
 
 export const getDragons = () => (dispatch) => {
   dragonsAPI.getDragons().then((res) => {
@@ -32,7 +39,7 @@ export const getDragons = () => (dispatch) => {
         id: dragon.id,
         name: dragon.name,
         type: dragon.type,
-        flickr_images: rocket.flickr_images[0],
+        flickr_images: dragon.flickr_images[0],
       })),
     ));
   });
