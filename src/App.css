@@ -61,30 +61,35 @@ h1 {
   padding-right: 25px;
 }
 
-.rocket-c {
+.rocket-c,
+.dragon-c {
   display: flex;
   flex-direction: column;
   margin: 22px;
 }
 
-.rocket-list {
+.rocket-list,
+.dragon-list {
   display: flex;
   flex-direction: row;
   margin: 12px;
 }
 
-.rocket-img {
+.rocket-img,
+.dragon-img {
   width: 250px;
   margin-right: 20px;
   box-shadow: 5px 5px 5px 5px rgb(214, 72, 100);
 }
 
-.rocket-info {
+.rocket-info,
+.dragon-info {
   display: flex;
   flex-direction: column;
 }
 
-.rocket-des {
+.rocket-des,
+.dragon-des {
   font-size: 14px;
   margin: 10px 0;
 }
@@ -111,7 +116,7 @@ h1 {
 .Not-A-member {
   background-color: gray;
   color: white;
-  font-size: 2vh;
+  font-size: 1.5vh;
   width: 110px;
   border-radius: 4px;
   text-align: center;
@@ -120,7 +125,7 @@ h1 {
 .Active-member {
   background-color: #0290ff;
   color: white;
-  font-size: 2vh;
+  font-size: 1.5vh;
   width: 110px;
   border-radius: 4px;
   text-align: center;
@@ -145,7 +150,7 @@ th {
 }
 
 .mission-description {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   font-size: 2vh;
 }
 
@@ -174,22 +179,37 @@ th {
   box-shadow: 5px 5px 5px lightgray;
 }
 
-.my-rockets {
+.profile-c {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  margin-left: 3%;
+}
+
+.my-rockets,
+.my-mission,
+.my-dragons {
   margin: 10px;
+  width: 30%;
 }
 
 h2 {
   margin: 10px;
 }
 
-.rocket-profile {
+.rocket-profile,
+.dragons-profile,
+.mission-profile {
   display: flex;
   flex-direction: column;
-  max-width: 40vw;
+  max-width: 70vw;
   border: 1px solid #918e8e;
 }
 
-.rocket-name {
+.rocket-name,
+.dragon-name,
+.mission-prof-name {
   margin: 0;
   padding: 12px;
   font-size: 20px;
