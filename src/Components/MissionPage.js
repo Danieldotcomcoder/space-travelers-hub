@@ -20,13 +20,13 @@ const Missions = () => {
     }
   }, []);
   return (
-    <table>
+    <table className="main-table">
       <thead>
         <tr>
           <td className="mission-d">Mission</td>
-          <td className="mission-d">Description</td>
-          <td className="mission-d">Status</td>
-          <td>Join</td>
+          <td className="mission-D">Description</td>
+          <td className="mission-S">Status</td>
+          <td className="join-mission" />
         </tr>
       </thead>
       <tbody>
