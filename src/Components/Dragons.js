@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getDragons, reserveDragons, cancelDragons } from '../Redux/dragons/dragons';
 
-
-
 export default function Dragons() {
   const dispatch = useDispatch();
   const dragons = useSelector((state) => state.dragons);
@@ -55,5 +53,5 @@ export default function Dragons() {
         </ul>
       ))}
     </div>
-  )
+  );
 }

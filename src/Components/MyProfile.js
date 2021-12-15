@@ -5,8 +5,8 @@ import JoinedMissions from './JoinedMissions';
 export default function MyProfile() {
   const rocketsName = useSelector((state) => state.rockets);
   const reservedRockets = rocketsName.filter((rocket) => rocket.reserved);
-  const dragons = useSelector(state => state.dragons);
-  const reservedDragons = dragons.filter(dragon => dragon.reserved);
+  const dragons = useSelector((state) => state.dragons);
+  const reservedDragons = dragons.filter((dragon) => dragon.reserved);
   return (
     <div>
       <div className="my-mission">

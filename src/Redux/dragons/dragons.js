@@ -1,8 +1,8 @@
-import dragonsAPI from "../../Components/GetDragons";
+import dragonsAPI from '../../Components/GetDragons';
 
-const GET_DRAGONS = "spaceX/dragons/GET_DRAGONS";
-const RESERVE_DRAGONS = "spaceX/dragons/RESERVE_DRAGONS";
-const CANCEL_DRAGONS_RESERVE = "spaceX/dragons/CANCEL_DRAGONS";
+const GET_DRAGONS = 'spaceX/dragons/GET_DRAGONS';
+const RESERVE_DRAGONS = 'spaceX/dragons/RESERVE_DRAGONS';
+const CANCEL_DRAGONS_RESERVE = 'spaceX/dragons/CANCEL_DRAGONS';
 const initialState = [];
 
 const dragonsReducer = (state = initialState, action) => {
@@ -10,16 +10,15 @@ const dragonsReducer = (state = initialState, action) => {
     case GET_DRAGONS:
       return action.payload;
     case RESERVE_DRAGONS: {
-      const updateState = state.map((dragon) =>
-        dragon.id !== action.payload ? dragon : { ...dragon, reserved: true }
-      );
+      const updateState = state.map((dragon) => (dragon.id !== action.payload
+        ? dragon
+        : { ...dragon, reserved: true }));
       return updateState;
     }
     case CANCEL_DRAGONS_RESERVE: {
-      const updateState = state.map((dragon) =>
-        dragon.id !== action.id ? dragon : { ...dragon, reserved: false }
-      );
-
+      const updateState = state.map((dragon) => (dragon.id !== action.payload
+        ? dragon
+        : { ...dragon, reserved: false }));
       return updateState;
     }
     default:
@@ -34,14 +33,16 @@ const getDragonAction = (payload) => ({
 
 export const getDragons = () => (dispatch) => {
   dragonsAPI.getDragons().then((res) => {
-    dispatch(getDragonAction(
-      res.map((dragon) => ({
-        id: dragon.id,
-        name: dragon.name,
-        type: dragon.type,
-        flickr_images: dragon.flickr_images[0],
-      })),
-    ));
+    dispatch(
+      getDragonAction(
+        res.map((dragon) => ({
+          id: dragon.id,
+          name: dragon.name,
+          type: dragon.type,
+          flickr_images: dragon.flickr_images[0],
+        })),
+      ),
+    );
   });
 };
 
