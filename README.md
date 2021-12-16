@@ -17,17 +17,16 @@
 - Visual Studio Code
 ## Live Demo
 
-[Link]
-
+[Link](https://cranky-cray-0feacf.netlify.app/)
 
 ## Getting Started
 
-**To clone this project**
-**Run command: $git clone  https://github.com/Danieldotcomcoder/space-travelers-hub**
-**or press the green Code button in the upper right corner and choose to download from the Download ZIP link.**
-** open terminal and type : 1-  npm install
-                            2-  npm run build.
-                            3-  npm start. 
+ To clone this project :
+*Run command: $git clone [repo](https://github.com/Danieldotcomcoder/space-travelers-hub)
+*Or press the green Code button in the upper right corner and choose to download from the Download ZIP link.
+*Open terminal and type :  1-  npm install
+                           2-  npm run build.
+                           3-  npm start. 
 ## Authors
 
  :man: Daniel Shdeed
