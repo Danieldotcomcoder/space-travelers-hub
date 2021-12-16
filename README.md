@@ -1,6 +1,12 @@
 # Space-Travelers-Hub
 - In this task, we will be working with the real live data from the SpaceX API. Our task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+# Screenshots
 
+![image](https://user-images.githubusercontent.com/87448628/146329774-2339b30f-ff2a-451f-b9a1-8c4ed53a01a5.png)
+
+![image](https://user-images.githubusercontent.com/87448628/146329869-7ff101f3-9864-4ef2-a280-248cfce284b3.png)
+
+![image](https://user-images.githubusercontent.com/87448628/146329918-5a122b3f-f6d5-4695-8791-26cf7fbc09f2.png)
 ## Built With
 - React-Redux
 - CSS3
