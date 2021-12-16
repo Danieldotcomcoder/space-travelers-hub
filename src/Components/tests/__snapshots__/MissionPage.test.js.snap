@@ -2,7 +2,9 @@
 
 exports[`Renders Mission Page 1`] = `
 Array [
-  <table>
+  <table
+    className="main-table"
+  >
     <thead>
       <tr>
         <td
@@ -11,18 +13,18 @@ Array [
           Mission
         </td>
         <td
-          className="mission-d"
+          className="mission-D"
         >
           Description
         </td>
         <td
-          className="mission-d"
+          className="mission-S"
         >
           Status
         </td>
-        <td>
-          Join
-        </td>
+        <td
+          className="join-mission"
+        />
       </tr>
     </thead>
     <tbody />

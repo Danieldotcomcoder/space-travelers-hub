@@ -43,7 +43,18 @@ exports[`App test Render App 1`] = `
         <li>
           <a
             className=""
+            href="/Dragons"
+            id="dragons"
+            onClick={[Function]}
+          >
+            Dragons
+          </a>
+        </li>
+        <li>
+          <a
+            className=""
             href="/MyProfile"
+            id="my-profile"
             onClick={[Function]}
           >
              My Profile
