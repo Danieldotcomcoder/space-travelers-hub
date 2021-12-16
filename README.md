@@ -22,9 +22,9 @@
 ## Getting Started
 
  To clone this project :
-*Run command: $git clone [repo](https://github.com/Danieldotcomcoder/space-travelers-hub)
-*Or press the green Code button in the upper right corner and choose to download from the Download ZIP link.
-*Open terminal and type :  1-  npm install
+* Run command: $git clone [repo](https://github.com/Danieldotcomcoder/space-travelers-hub)
+* Or press the green Code button in the upper right corner and choose to download from the Download ZIP link.
+* Open terminal and type : 1-  npm install
                            2-  npm run build.
                            3-  npm start. 
 ## Authors
